@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../Models/category.dart';
 
-class Categoryservice {
+class CategoryService {
   final String apiUrl = "http://localhost:8000/api/categories";
 
   //get all categories
