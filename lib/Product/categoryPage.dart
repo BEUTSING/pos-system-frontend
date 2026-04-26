@@ -92,9 +92,15 @@ class _CategoryPageState extends State<CategoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
+        
         title: const Text("Categories"),
         actions: [
-          IconButton(icon: const Icon(Icons.add), onPressed: openCreate),
+          ElevatedButton.icon(
+            icon: const Icon(Icons.add),
+            label: const Text("Add Category"),
+            onPressed: openCreate,
+          ),
         ],
       ),
 
@@ -153,10 +159,7 @@ class _CategoryPageState extends State<CategoryPage> {
               },
             ),
 
-      floatingActionButton: FloatingActionButton(
-        onPressed: openCreate,
-        child: const Icon(Icons.add),
-      ),
+      
     );
   }
 }

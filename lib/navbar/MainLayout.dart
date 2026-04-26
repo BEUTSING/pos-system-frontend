@@ -14,7 +14,10 @@ class MainLayout extends StatelessWidget {
         bool isDesktop = constraints.maxWidth > 800;
 
         return Scaffold(
-          appBar: AppBar(title: const Text("My App")),
+          
+          extendBodyBehindAppBar: true,// To allow the body to extend behind the AppBar
+          appBar: AppBar(
+            ),
 
           // Drawer for mobile
           drawer: isDesktop ? null : const AppDrawer(),
@@ -22,7 +25,7 @@ class MainLayout extends StatelessWidget {
           body: Row(
             children: [
               // Sidebar for desktop
-              if (isDesktop) const SizedBox(width: 250, child: AppDrawer()),
+              if (isDesktop) const SizedBox(height: double.infinity,width: 250, child: AppDrawer()),
 
               // Page content
               Expanded(child: child),

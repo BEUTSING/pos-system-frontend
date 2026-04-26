@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 // This file defines the Category class, which represents a product category in the application.
 class Category {
   final int id;
