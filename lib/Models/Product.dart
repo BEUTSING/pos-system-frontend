@@ -56,7 +56,6 @@ final Supplier? supplier;
       'quantity': quantity,
       'minimumstock': minimumstock,
 
-      // send supplier id or null
     };
   }
 }
